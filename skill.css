@@ -1,0 +1,244 @@
+body {
+    margin: 0%;
+    padding: 0%;
+}
+
+.mbody {
+    height: 100vh;
+    background-image: linear-gradient( 120deg, white , black 63%);
+}
+
+.navbar {
+    height: 6vh;
+    padding: 3vh 0vh;
+}
+
+a {
+    margin: 0vh 5vh;
+    text-decoration: none;
+    color: white;
+}
+
+img {
+    height: 7vh;
+}
+
+#a1 {
+    float: left;
+    margin: 1.5vh 5vh;
+}
+
+#link {
+    float: right;
+    margin: 1.5vh 5vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+}
+
+#contact {
+    background-color: white;
+    border-radius: 2rem;
+    padding: 1vh;
+    color: black;
+    font-size: small;
+}
+
+.left {
+    float: left;
+    margin: 10vh 0vh;
+    padding: 10vh 5vh;
+}
+
+#a {
+    font-size: 25px;
+}
+
+#b {
+    font-size: 50px;
+}
+
+#c {
+    font-size: larger;
+    color: rgba(0, 0, 0, 0.59);
+}
+
+#a {
+    animation-name: text;
+    animation-duration: 0.8s;
+    animation-direction: normal;
+    animation-iteration-count:1;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes text {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+#b, #c {
+    animation-name: textb;
+    animation-duration: 0.8s;
+    animation-direction: normal;
+    animation-iteration-count:1;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes textb {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.right {
+    float: right;
+}
+
+#a,#b {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.html, .css, .js, .bootstrap, .c, .java {
+    width: 100%;
+    height: 11vh;
+    margin: 2vh;
+    border: 1px solid rgba(255, 255, 255, 0.235);
+    border-radius: 10px;
+    transition: all 0.2s;
+
+    animation-name: skills;
+    animation-duration: 0.8s;
+    animation-direction: normal;
+    animation-iteration-count:1;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes skills {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.html:hover, .css:hover, .js:hover, .bootstrap:hover, .c:hover, .java:hover {
+    transform: scale(1.1);
+}
+
+.right {
+    height: 60vh;
+    width: 70vh;
+    margin: 5vh 25vh;
+}
+
+.logol {
+    float: left;
+    height: 10vh;
+    width: 10vh;
+    padding: 0.5vh;
+    border-radius: 10px 0px 0px 10px;
+    background-color: rgba(173, 173, 173, 0.171);
+}
+
+.logor {
+    float: right;
+    height: 10vh;
+    width: 10vh;
+    padding: 0.5vh;
+    border-radius: 0px 10px 10px 0px;
+    background-color: rgba(173, 173, 173, 0.171);
+}
+
+.textr {
+    padding-top: 2.5vh;
+    text-align: center;
+    color: white;
+    font-family: cursive;
+    height: calc(100% - 2vh);
+    font-size: large;
+}
+.textl {
+    text-align: center;
+    padding-top: 2.5vh;
+    width: calc(100% - 11vh);
+    color: white;
+    font-family: cursive;
+    height: calc(100% - 2vh);
+    font-size: large;
+    float: left;
+}
+
+@media only screen and (max-width: 400px) {
+    .mbody {
+        background-image: linear-gradient(180deg, black, white, rgb(103, 102, 102) );
+        height: 125vh;
+    }
+    .right {
+        height: 30vh;
+        width: 100%;
+        margin: 2vh;
+    }
+    .left {
+        margin: 0vh;
+    }
+    a {
+        color: black;
+        margin: 0vh 2vh;
+    }
+    #link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        width: 100%;
+        background-color: rgba(240, 248, 255, 0.3);
+        padding: 1vh;
+    }
+
+    .html, .css, .js, .bootstrap, .c, .java {
+        height: 5vh;
+        margin: 2vh;
+    }
+
+    .logol {
+        height: 5vh;
+        width: 5vh;
+        background-color: rgba(0, 0, 0, 0.171);
+    }
+    .logor {
+        height: 5vh;
+        width: 5vh;
+        background-color: rgba(0, 0, 0, 0.171);
+    }
+    .textl {
+        text-align: center;
+        padding-top: 2vh;
+        width: calc(100% - 10vh);
+        color: black;
+        font-family: cursive;
+        height: calc(100% - 2vh);
+        font-size: large;
+        float: left;
+    }
+    .textr {
+        padding-top: 2vh;
+        text-align: center;
+        color: black;
+        font-family: cursive;
+        height: calc(100% - 2vh);
+        font-size: large;
+    }
+}

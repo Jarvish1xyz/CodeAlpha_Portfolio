@@ -1,0 +1,35 @@
+
+@media only screen and (max-width: 400px) {
+    .mbody {
+        background-image: linear-gradient(180deg, black, white, rgb(103, 102, 102) );
+        height: calc(100vh - 9vh);
+    }
+    .right {
+        position: absolute;
+        top: 20vh;
+        margin-top: 1vh;
+        padding: 0vh;
+    }
+    .left {
+        margin: 0vh;
+        padding-top: 23vh;
+        float: left;
+    }
+    #myImage { 
+        height: 23vh;
+        box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.083);
+    }
+    a {
+        color: black;
+        margin: 0vh 2vh;
+    }
+    #link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        width: 100%;
+        background-color: rgba(240, 248, 255, 0.3);
+        padding: 1vh;
+    }
+}
