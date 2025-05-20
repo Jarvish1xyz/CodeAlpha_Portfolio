@@ -118,7 +118,7 @@ img {
 @media only screen and (max-width: 400px) {
     .mbody {
         background-image: linear-gradient(180deg, black, white, rgb(103, 102, 102) );
-        height: 125vh;
+        height: 100vh;
     }
     .right {
         float: left;
