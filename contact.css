@@ -79,7 +79,6 @@ img {
 }
 
 .textr {
-    font-size: large;
     padding-top: 1vh;
 }
 
@@ -87,7 +86,7 @@ img {
 @media only screen and (max-width: 400px) {
     .mbody {
         background-image: linear-gradient(180deg, black, white, rgb(103, 102, 102) );
-        height: 125vh;
+        height: 91vh;
     }
     .right {
         float: left;
@@ -101,11 +100,16 @@ img {
         margin: 5vh 0vh;
         padding: 0vh;
         margin-left: 2vh;
+        background-color: rgba(0, 0, 0, 0.297);
     }
-
+    
     #Layer_1 {
         height: 5vh;
         margin-left: -4vh;
+    }
+    
+    .textr {
+        font-size: large;
     }
     
     a {
