@@ -102,6 +102,7 @@ img {
 
 .right {
     float: right;
+    margin: 15vh 20vh;
 }
 
 
@@ -163,29 +164,29 @@ img {
     border-radius: 20px;
 }
 
-.right {
-    margin: 15vh 20vh;
-}
-
 @media only screen and (max-width: 400px) {
     .mbody {
         background-image: linear-gradient(180deg, black, white, rgb(103, 102, 102) );
         height: calc(100vh - 9vh);
     }
     .right {
-        position: absolute;
-        top: 20vh;
-        margin-top: 1vh;
+        height: auto;
+        width: 100vw;
+        float: left;
+        margin: 5vh 0vh;
         padding: 0vh;
+        display: flex;
+        justify-content: center;
     }
     .left {
-        margin: 0vh;
-        padding-top: 23vh;
         float: left;
+        margin: 0vh;
+        padding: 0vh 5vh;
     }
-    #myImage { 
-        height: 23vh;
-        box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.083);
+    #myImage {
+        /* margin-left: 50%; */
+        height: 30vh;
+        box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.183);
     }
     a {
         color: black;

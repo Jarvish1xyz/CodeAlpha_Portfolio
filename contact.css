@@ -44,76 +44,45 @@ img {
 }
 
 .left {
+    width: 50vh;
     float: left;
     margin: 10vh 0vh;
-    padding: 5vh;
+    padding: 2vh 2vh;
+    border-radius: 10px;
+    background-color:white;
 }
 
-#a {
-    font-size: 25px;
-}
-
-#a, #c {
-    font-family: cursive;
-}
-
-#b {
-    font-size: 50px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-#c {
-    font-size: larger;
-    color: rgba(0, 0, 0, 0.59);
-}
-
-#a {
-    animation-name: text;
-    animation-duration: 0.8s;
-    animation-direction: normal;
-    animation-iteration-count:1;
-    animation-timing-function: ease-in-out;
-}
-
-@keyframes text {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}
-
-#b, #c {
-    animation-name: textb;
-    animation-duration: 0.8s;
-    animation-direction: normal;
-    animation-iteration-count:1;
-    animation-timing-function: ease-in-out;
-}
-
-@keyframes textb {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}
-
-.right #c {
-    color: white;
-}
 .right {
     float: right;
-    color: white;
     margin: 10vh 0vh;
     padding: 5vh;
 }
+
+#phon, #mail {
+    width: 40vh;
+    margin: 1vh 0vh;
+    padding: 2vh;
+    border: 0px;
+    border-radius: 2rem;
+    align-items: center;
+}
+
+#Layer_1 {
+    height: 5vh;
+    margin-left: -7vh;
+}
+
+.logol {
+    float: left;
+    height: 5vh;
+    width: 5vh;
+}
+
+.textr {
+    font-size: large;
+    padding-top: 1vh;
+}
+
 
 @media only screen and (max-width: 400px) {
     .mbody {
@@ -126,12 +95,19 @@ img {
         margin: 0vh;
         padding: 5vh;
     }
-    .right #c {
-        color: black;
-    }
     .left {
-        margin: 0vh;
+        width: calc(100vw - 4vh);
+        float: left;
+        margin: 5vh 0vh;
+        padding: 0vh;
+        margin-left: 2vh;
     }
+
+    #Layer_1 {
+        height: 5vh;
+        margin-left: -4vh;
+    }
+    
     a {
         color: black;
         margin: 0vh 2vh;
@@ -144,9 +120,5 @@ img {
         width: 100%;
         background-color: rgba(240, 248, 255, 0.3);
         padding: 1vh;
-    }
-
-    #b {
-        font-size: 40px;
     }
 }
