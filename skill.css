@@ -218,21 +218,21 @@ img {
         width: 5vh;
         background-color: rgba(0, 0, 0, 0.171);
     }
-    .logor {
-        height: 5vh;
-        width: 5vh;
-        background-color: rgba(0, 0, 0, 0.171);
-    }
-    .textl {
-        text-align: center;
-        padding-top: 2vh;
-        width: calc(100% - 10vh);
-        color: black;
-        font-family: cursive;
-        height: calc(100% - 2vh);
-        font-size: large;
-        float: left;
-    }
+        .logor {
+            height: 5vh;
+            width: 5vh;
+            background-color: rgba(0, 0, 0, 0.171);
+        }
+        .textl {
+            text-align: center;
+            padding-top: 2vh;
+            width: calc(100% - 10vh);
+            color: black;
+            font-family: cursive;
+            height: calc(100% - 2vh);
+            font-size: large;
+            float: left;
+        }
     .textr {
         padding-top: 2vh;
         text-align: center;
