@@ -193,7 +193,7 @@ img {
     }
     .left {
         margin: 0vh;
-        padding: 10vh 0vh;
+        /* padding: 10vh 0vh; */
     }
     a {
         color: black;
