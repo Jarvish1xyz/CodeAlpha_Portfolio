@@ -5,15 +5,19 @@ function bigShow(name) {
 
     document.addEventListener('keydown', function(e) {
         if(e.key==='Escape') {
-            document.getElementById(name).style.display = "none";
-            document.getElementById(name).style.animationName = "";
+            closeIt();
         }
     })
     document.getElementById(name).addEventListener('click', (e) => {
         if (e.target === document.getElementById(name)) {
-            photoOverlay.style.display = 'none';
+            closeIt();
         }
     });
+}
+
+function closeIt() {
+    document.getElementById(name).style.display = "none";
+    document.getElementById(name).style.animationName = "";
 }
 
 
