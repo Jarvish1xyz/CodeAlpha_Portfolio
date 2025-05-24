@@ -9,6 +9,11 @@ function bigShow(name) {
             document.getElementById(name).style.animationName = "";
         }
     })
+    document.getElementById(name).addEventListener('click', (e) => {
+        if (e.target === photoOverlay) {
+            photoOverlay.style.display = 'none';
+        }
+    });
 }
 
 
