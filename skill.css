@@ -51,6 +51,7 @@ img {
 
 #a {
     font-size: 25px;
+    font-family: cursive;
 }
 
 #b {
@@ -102,10 +103,6 @@ img {
 
 .right {
     float: right;
-}
-
-#a,#b {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .html, .css, .js, .bootstrap, .c, .java {
