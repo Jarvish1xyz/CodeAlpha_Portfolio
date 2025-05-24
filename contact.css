@@ -106,7 +106,7 @@ img {
     float: left;
     height: 11vh;
     width: 11vh;
-    margin: 2vh;
+    margin: 2vh 2vh;
     border: 1px solid rgba(255, 255, 255, 0.235);
     border-radius: 10px;
     transition: all 0.2s;
@@ -228,7 +228,7 @@ img {
         height: 30vh;
         width: 100%;
         /* background-color: aqua; */
-        margin: 0vh;
+        margin: 5vh -5vh;
     }
     .left {
         margin: 5vh 0vh;
@@ -246,12 +246,6 @@ img {
         width: 100%;
         background-color: rgba(240, 248, 255, 0.3);
         padding: 1vh;
-    }
-
-    .linkedin, .github, .instagram {
-        height: 7.5vh;
-        width: 7.5vh;
-        margin: 2vh;
     }
 
     .logol {
@@ -280,8 +274,11 @@ img {
 
     .linkedin, .github, .instagram {
         height: 7.5vh;
+        width: 7.5vh;
         background-color: rgba(0, 0, 0, 0.431);
-        margin: 4vh;
+        display: flex;
+        justify-content: center;
+        margin: 2vh;
     }
     
     .tooltip {
