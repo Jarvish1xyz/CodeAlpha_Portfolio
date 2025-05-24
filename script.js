@@ -1,4 +1,26 @@
-const photoOverlay = document.getElementById('photo-overlay');
+function closeOverlay() {
+      overlay.style.display = 'none';
+}
+
+overlay.addEventListener('click', (e) => {
+      if (e.target === overlay) {
+        history.back(); // triggers popstate
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        history.back();
+      }
+    });
+
+    window.addEventListener('popstate', (e) => {
+      if (overlay.style.display === 'flex') {
+        closeOverlay();
+      }
+    });
+
+/* const photoOverlay = document.getElementById('photo-overlay');
 
 function closePhoto() {
   photoOverlay.style.display = 'none';
@@ -24,7 +46,7 @@ window.addEventListener('popstate', (event) => {
   if (photoOverlay.style.display === 'flex') {
     photoOverlay.style.display = 'none';
   }
-});
+});*/
 
 
 function bigShow(name) {
