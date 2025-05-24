@@ -1,19 +1,36 @@
+const photoOverlay = document.getElementById('photo-overlay');
+
+function closePhoto() {
+  photoOverlay.style.display = 'none';
+  if (history.state && history.state.photoOpen) {
+    history.back();
+  }
+}
+
+document.addEventListener('keydown', function(e) {
+        if(e.key==='Escape') {
+            photoOverlay.style.display = "none";
+            photoOverlay.style.animationName = "";
+       }
+})
+
+photoOverlay.addEventListener('click', (e) => {
+  if (e.target === photoOverlay) {
+    closePhoto();
+  }
+});
+
+window.addEventListener('popstate', (event) => {
+  if (photoOverlay.style.display === 'flex') {
+    photoOverlay.style.display = 'none';
+  }
+});
+
+
 function bigShow(name) {
     name+='1';
     document.getElementById(name).style.display = "flex";
     document.getElementById(name).style.animationName = "first";
-
-    document.addEventListener('keydown', function(e) {
-        if(e.key==='Escape') {
-            document.getElementById(name).style.display = "none";
-            document.getElementById(name).style.animationName = "";
-        }
-    })
-    window.addEventListener('popstate', (event) => {
-        if (document.getElementById(name).style.display === 'flex') {
-            document.getElementById(name).style.display = 'none';
-        }
-    });
 }
 
 function openLink(Id) {
