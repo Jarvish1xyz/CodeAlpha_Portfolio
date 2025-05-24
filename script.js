@@ -31,6 +31,7 @@ function bigShow(name) {
     name+='1';
     document.getElementById(name).style.display = "flex";
     document.getElementById(name).style.animationName = "first";
+    history.pushState({ photoOpen: true }, "");
 }
 
 function openLink(Id) {
