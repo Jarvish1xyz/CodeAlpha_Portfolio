@@ -10,7 +10,7 @@ function bigShow(name) {
         }
     })
     document.getElementById(name).addEventListener('click', (e) => {
-        if (e.target === photoOverlay) {
+        if (e.target === document.getElementById(name)) {
             photoOverlay.style.display = 'none';
         }
     });
